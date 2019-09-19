@@ -20,7 +20,6 @@ public class Controller {
         int[] nums = new int[quantum];
         for (int i = 0; i < nums.length; i++) {
             nums[i] = 1 + rand.nextInt(quantum);
-            System.out.print(nums[i] + "@");
         }
 
         // Массив заполняемый четными числами
@@ -30,27 +29,26 @@ public class Controller {
         int balance = 0;
         int count = 0;
 
-        //счетчик чеьных чисел
+        //счетчик четных чисел
         for (int i = 0; i < nums.length; i++) {
+        
             balance = nums[i] % 2;
+            
             if (balance == 0) {
                 count = count+1;
             }
         }
-        System.out.println(" кол-во четных чисел: " + count);
 
             balance = 0;
             for (int i = 0; i < nums.length; i++) {
-            balance = nums[i] % 2;
-                System.out.print("nums = " + i + " = " + nums[i] + ", ");
-                System.out.print("balance = " + balance + ", ");
-            if (balance == 0) {
-                for ( i = 0; i < nums.length; i++) {
+            
+                balance = nums[i] % 2;
+                
+                if (balance == 0) {
                     even[i] = nums[i];
-                   // System.out.print(nums[i]);
                     System.out.println(even[i]);
                 }
+            
             }
-            }
-        }
-    }
+      }
+ }
