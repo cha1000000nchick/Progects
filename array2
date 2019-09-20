@@ -1,0 +1,27 @@
+package sample;
+import java.util.Random;
+import java.util.Scanner;
+public class Controller {
+    public static void main (String[]args){
+
+      Random rand = new Random();
+      Scanner in = new Scanner();
+      
+      int maxNumber = 0;
+      int maxIndex = 0;
+      int length = 12;
+      int[] arr = new  int[length];
+      for (int i = 0; i < arr.length; i++ ) {
+          int num = rand.nextInt(31) - 15;
+          arr[i] = num;
+          if (maxNumber < arr[i]){
+              maxNumber = arr[i];
+              maxIndex = i;
+          }
+         // System.out.println("проверка" + arr[i]);
+
+      }
+        System.out.print("Максимальное число:" + maxNumber + " Индекс = " +  maxIndex);
+    }
+
+}
