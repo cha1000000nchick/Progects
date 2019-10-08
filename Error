@@ -1,0 +1,18 @@
+package sample;
+
+import java.util.Scanner;
+
+public class Triangle extends sample.Figure {
+    
+    Scanner scan = new Scanner(System.in);
+    public static void area {
+        System.out.print("Input size side: ");
+        double sizeS = scan.nextDouble();
+
+        System.out.print("Input size height: ");
+        double sizeH = scan.nextDouble();
+
+        double area = (sizeS/2)*sizeH;
+        System.out.println("Area triangle = " + area );
+    }
+}
